@@ -6,7 +6,7 @@ const dbConfig = require('../configs/banco.js')
 
 
 // Objetivo: Inicializar um pool de conexoes, 
-//  utilizado o driver node-oracledb para conexao com o Banco de dados Oracle
+//  utilizando o driver node-oracledb para conexao com o Banco de dados Oracle
 async function inicializa() {
     const pool = await oracledb.createPool(dbConfig.hrPool)
 }
@@ -14,7 +14,7 @@ async function inicializa() {
 module.exports.inicializa =  inicializa
 
 
-// Objetivo: Encerrar o Pool de conexoes do Banco de dado
+// Objetivo: Encerrar o Pool de conexoes do Banco de dados
 async function encerra() {
     await oracledb.getPool().close();
 }

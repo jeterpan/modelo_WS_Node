@@ -1,6 +1,30 @@
 // Objetivo: Simular o WebService do fornecedor Ideris,
 //           afim de fazer testes em um middleware para integracao Hub (Ideris) x Logix
 
+// Pull Requests
+//  - Implementar exigência de autenticação JWT para consumir este WS
+//  - Implementar exemplos com os diversos metodos mais utilizados: GET, POST (levando-se em consideração as operações CRUD)
+//  - Implementar suporte para cliente poder solicitar listar por exemplo: N registros (exemplo: por Listar apenas 50 Pedidos de Venda) (parametro: limit/limite)
+//  - Implementar suporte para cliente poder paginar (quando há muitos registros a serem listados) (parametro offset/deslocamento)
+//  - Docker - preparar para trabalhar em Docker
+//  - Micro serviços - Manter em mente que este é um modelo a ser utilizado como exemplo para vários micro serviços
+
+
+// Instruções de instalação:
+//
+//  Configurar as váriaveis de ambiente
+//   UV_THREADPOOL_SIZE - quantidade de threads a serem utilizadas entre Node.js e banco de dados
+//   WS_MODELO_CONNSTRING - String de conexão com o banco de dados: exemplo: 10.0.7.156/HOM
+//   WS_MODELO_BDUSER - Usuario para WS Modelo conectar ao banco de dados
+//   WS_MODELO_BDPASSWORD - senha para WS Modelo conectar ao banco de dados
+//   WS_MODELO_CORS_ALLOW_ORIGINS - Origens permitidas: exemplo: 'http://localhost:4200'
+
+//  Revisar os arquivos de configuração
+//   ./configs/aplicacao.js
+//   ./configs/banco.js
+//   ./configs/servidorWeb.js
+
+
 // modulos desta aplicacao
 const servidorWeb = require('./services/servidorWeb.js')
 const banco = require('./servicos/banco.js/index.js')

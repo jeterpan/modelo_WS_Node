@@ -4,6 +4,6 @@ module.exports = {
       ambiente: 'dev' // dev para desenvolvimento ou prd para producao
 
       // Configuração de autenticação
-    , chaveSecretaJWT: 'hyt$@hIbpqdkgjaldktNkla'
+    , chaveSecretaJWT: process.env.WS_MODELO_JWT_SECRET_KEY
 
 }

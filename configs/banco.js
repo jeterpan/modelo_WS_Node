@@ -1,10 +1,10 @@
 module.exports = {
     hrPool: {
-        user: 'ideris',
-        password: 'idTesteSims',
-        connectionString: '10.0.7.156/HOM',
-        poolMin: 10,
-        poolMax: 10,
-        poolIncrement: 0
+          user: process.env.WS_MODELO_BDUSER
+        , password: process.env.WS_MODELO_BDPASSWORD
+        , connectionString: process.env.WS_MODELO_CONNSTRING
+        , poolMin: 10
+        , poolMax: 10
+        , poolIncrement: 0
     }
 }
