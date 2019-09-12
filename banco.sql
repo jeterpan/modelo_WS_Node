@@ -8,6 +8,8 @@ create table jsao_users (
    constraint jsao_users_uk1 unique (email)
 );
 
+teste
+
 create sequence jsao_users_seq;
 
 create or replace trigger bir_jsao_users_trg
