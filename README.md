@@ -2,6 +2,14 @@
 Modelo de WebService usando Node.js
 
 # Instalação
+Conecte no banco de dados como DBA e crie o usuario admin de banco de dados para o servidor JWT
+
+  Execute o script oradb_criaUsuarioAdml.sql
+
+Conecte no banco de dados com o usuario jwtadmin e crie os objetos de banco deste usuario
+ 
+  Execute o script oradb_criaObjetos.sql
+
 Configurar as váriaveis de ambiente
 
   UV_THREADPOOL_SIZE - quantidade de threads a serem utilizadas entre Node.js e banco de dados
