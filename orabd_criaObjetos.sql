@@ -11,6 +11,7 @@ Banco: Oracle 11g
              para executar este script
 */
 
+
 -- Cria tabela com dados de autenticacao
 
 CREATE TABLE auth_users (
@@ -25,13 +26,13 @@ CREATE TABLE auth_users (
 ;
 
 
--- Cria sequencia que ser� utilizada para gerar automaticamente o ID do usuario
+-- Cria sequencia que será utilizada para gerar automaticamente o ID do usuario
 
 CREATE SEQUENCE auth_users_seq;
 ;
 
 
--- Cria trigger que gera o ID do usu�rio, baseado em sequence
+-- Cria trigger que gera o ID do usuário, baseado em sequence
 
 CREATE OR REPLACE TRIGGER bir_auth_users_trg
    BEFORE INSERT ON auth_users
