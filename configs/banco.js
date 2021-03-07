@@ -6,7 +6,7 @@
 
 // Conselho: Defina o poolMax com um numero minimo necessario de conexoes maximas, e caso precisar aumentar ele, reveja tambem o numero de threads
 //  do Node (creio que são threads entre Node.js e libUV): parametro: UV_THREADPOOL_SIZE
-// O Christopher disse que tem ferramentas para monitorar isso, procurar a respeito
+// O Christopher disse que tem ferramentas para monitorar isso, procurar a respeito (log stats features)
 module.exports = {
     hrPool: {
           user: process.env.WS_MODELO_BDUSER
