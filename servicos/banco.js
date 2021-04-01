@@ -7,6 +7,9 @@ const dbConfig = require('../configs/banco.js')
 
 // Objetivo: Inicializar um pool de conexoes, 
 //  utilizando o driver node-oracledb para conexao com o Banco de dados Oracle
+
+// Boas práticas para utilização do Pooling, sugerida pela Oracle (Christopher Jones):
+// https://oracle.github.io/node-oracledb/doc/api.html#connpooling
 async function inicializa() {
     const pool = await oracledb.createPool(dbConfig.hrPool)
 }
